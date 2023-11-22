@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Montserrat", "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  background-color: #d6ad79;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+h1 {
+  padding-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 18px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+main {
+  padding: 145px 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffd092;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#contenedor-productos-destacados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 64px;
+}
+
+#card-producto-destacado {
+  color: #000;
+  background-color: #dbd3ad;
+  border-color: #c2714f;
+}
+
+#card-producto-destacado:hover {
+  background-color: #eef1bd;
+}
+
+#card-producto-destacado button:hover {
+  background-color: #dbd3ad;
+  border-color: #000;
+  color: #000;
+}
+
+#contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 64px;
+}
+
+h2 {
+  padding-bottom: 24px;
+}
+
+#llamativo {
+  font-size: 32px;
+  text-decoration: underline;
+  color: #a77d46;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card h3 {
+  padding: 10px 0;
+}
+
+.card p {
+  padding-bottom: 10px;
+}
+
+.card img {
+  padding: 6px;
+  max-height: 200px;
+}
+
+.card button {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px;
+  margin: 10px;
+  transition: 0.3s border-color, 0.3s background-color, 0.3s color ease;
+}
+
+.card button:hover {
+  border-color: #fff;
+  background-color: #a77d46;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.card button.en-carrito {
+  border-color: #fff;
+  background-color: #a77d46;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: black;
+}
+
+section h2 {
+  color: #333;
+}
+
+#carrito {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#carrito .contenedor-carrito {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#carrito .contenedor {
+  border-radius: 12px;
+  width: fit-content;
+  padding: 12px 24px;
+}
+
+#carrito .contenedor-carrito .precio {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+#carrito .contenedor-carrito button {
+  margin-top: 12px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+}
+
+#carrito .contenedor-carrito button#comprar {
+  background-color: rgb(0, 110, 255);
+  color: #fff;
+  padding: 12px;
+}
+
+#sobre-nosotros p {
+  text-align: left;
+}
+
+footer {
+  background-color: #d6ad79;
+  padding: 35px 0;
+  text-align: center;
+  width: 100%;
+}
